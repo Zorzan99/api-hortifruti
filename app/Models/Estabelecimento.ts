@@ -3,22 +3,22 @@ import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
 
 export default class Estabelecimento extends BaseModel {
   @column({ isPrimary: true })
-  public id: number
+  public id: number;
 
   @column()
-  public userId: number
+  public userId: number;
 
   @column()
-  public nome: string
+  public nome: string;
 
   @column()
-  public logo: string | null
+  public logo: string | null;
 
   @column()
-  public bloqueado: boolean
+  public bloqueado: boolean;
 
   @column()
-  public online: boolean
+  public online: boolean;
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
